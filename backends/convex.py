@@ -232,7 +232,7 @@ def download_convex_binary():
 
 @functools.cache
 def fetch_convex_release():
-    releases = requests.get("https://api.github.com/repos/get-convex/convex-backend/releases").json()
+    releases = requests.get("https://api.github.com/repos/convex/convex-backend/releases").json()
     return releases[0]
 
 
